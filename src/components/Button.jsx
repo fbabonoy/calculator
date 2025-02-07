@@ -7,7 +7,7 @@ export default function CalcButton({ icon, size, onClick }) {
         className="c-button"
         onClick={onClick}
         style={{
-            width: `${buttonSize || "50%"} `,
+            width: `${buttonSize} `,
         }}>
         {icon}
     </button>

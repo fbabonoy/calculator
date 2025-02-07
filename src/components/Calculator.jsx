@@ -16,7 +16,6 @@ function Calculator() {
 
     const handleClick = (e) => {
         let value = e.target.textContent
-        console.log(displayNum[displayNum.length-1]);
         
         if (displayNum[displayNum.length-1] === value && !Number(value)) {
             return
@@ -40,7 +39,7 @@ function Calculator() {
     return (
         <div className='layout'>
             <Display currentNum={displayNum} />
-            <div className="buttonList">
+            <div>
                 {calculatorButtons.map((button) => {
                     return <CalcButton
                         key={button}
