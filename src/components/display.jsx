@@ -1,4 +1,4 @@
-import "./App.css"
+import "../App.css"
 
 function Display({currentNum}) {
     return <div className="totalDisplay">
