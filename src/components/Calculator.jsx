@@ -16,6 +16,11 @@ function Calculator() {
 
     const handleClick = (e) => {
         let value = e.target.textContent
+        console.log(displayNum[displayNum.length-1]);
+        
+        if (displayNum[displayNum.length-1] === value && !Number(value)) {
+            return
+        }
         if (value === "C") {
             setDisplayNum("0");
         } else if (value === "+-") {
